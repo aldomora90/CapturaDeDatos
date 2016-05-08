@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Captura de Datos</string>
+    <string name="nombreF">Nombre Completo</string>
+    <string name="fechaF">Fecha de nacimiento</string>
+    <string name="telefonoF">Teléfono</string>
+    <string name="emailF">Email</string>
+    <string name="descF">Descripción Contacto</string>
+    <string name="nextF">Siguiente</string>
+    <string name="tituloConf">Confirmar Datos</string>
+    <string name="fechaConf">Fecha de nacimiento: </string>
+    <string name="telConf">Tel. </string>
+    <string name="emailConf">Email: </string>
+    <string name="descConf">Descripción: </string>
+    <string name="editButton">Editar Datos</string>
+</resources>
+

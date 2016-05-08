@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aldomora.capturadedatos.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nombreForm"
+            android:layout_width="@dimen/editSize"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/topMarg">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombreF"
+                android:textSize="@dimen/textSize"
+                android:focusableInTouchMode="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_marginTop="@dimen/interSpace"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/descSize"
+            android:text="@string/fechaF"/>
+        <DatePicker
+            android:id="@+id/fechaForm"
+            android:layout_marginTop="@dimen/interSpace"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/editSize"
+            android:layout_height="150dp"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/telForm"
+            android:layout_width="@dimen/editSize"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/interSpace"
+            android:touchscreenBlocksFocus="false">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/telefonoF"
+                android:textSize="@dimen/textSize"
+                android:focusableInTouchMode="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailForm"
+            android:layout_width="@dimen/editSize"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:focusableInTouchMode="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/emailF"
+                android:textSize="@dimen/textSize"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_marginTop="@dimen/interSpace"
+            android:layout_marginLeft="@dimen/leftMarg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descF"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/descForm"
+            android:layout_width="@dimen/editSize"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize"/>
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/sigButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/nextF"/>
+</RelativeLayout>
+
